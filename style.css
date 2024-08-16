@@ -1,0 +1,137 @@
+html {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100svh;
+  /*drop whatever background you want into the img folder and replace it here*/
+  background-image: url(img/girl.png);
+  background-size: cover;
+  overflow-x: clip;
+}
+
+body {
+  color: #839496;
+  margin: 0px;
+}
+
+#greeting,
+#grid-container,
+#date {
+  font-family: "Lucida Console", "Courier New", monospace;
+}
+
+#greeting {
+  color: #fb9be8;
+  font-size: 2.5em;
+  font-weight: 900;
+  grid-column: 1/-1;
+  text-align: center;
+  display: grid;
+}
+
+#date {
+  font-size: 1.3em;
+  font-weight: 600;
+  color: #fb9be8;
+  display: grid;
+  grid-column: 1/-1;
+  text-align: center;
+  margin: 1em 0;
+}
+
+
+#grid {
+  width: 100%;
+  display: grid;
+  flex-wrap: wrap;
+  justify-content: center;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  padding: 50px 150px 10px;
+}
+
+#grid-container {
+  color: #1c1618;
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  text-decoration: none;
+
+}
+
+.category-container {
+  padding: 25px;
+  border-radius: 10px;
+  flex-basis: calc(20% - 10px);
+  min-width: 250px;
+}
+
+.category-container:hover {
+  background-color: #1c1618;
+  transition: all 0.15s ease-in;
+}
+
+.category-title {
+  color: #fb9be8;
+  margin: 5px;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:link {
+  color: #839496;
+}
+
+a:visited {
+  color: #839496;
+}
+
+a:hover {
+  color: #fb9be8;
+}
+
+a:active {
+  color: #714669;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  margin-left: 10px;
+}
+
+li {
+  margin: 0;
+  padding: 0 7px;
+  line-height: 20px;
+  color: #369;
+  font-weight: bold;
+  border-left: 1px solid #93a1a1;
+
+}
+
+li:last-child {
+  border-left: none;
+}
+
+li:before {
+  position: relative;
+  top: -0.3em;
+  height: 1em;
+  width: 12px;
+  color: white;
+  border-bottom: 1px solid #93a1a1;
+  content: "";
+  display: inline-block;
+  left: -7px;
+}
+
+li:last-child:before {
+  border-left: 1px solid #93a1a1;
+}
